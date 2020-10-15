@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_move_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pindah_activity"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/btn_move_activity_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/pindah_activity_dengan_data"
+        app:layout_constraintEnd_toEndOf="@+id/btn_move_activity"
+        app:layout_constraintStart_toStartOf="@+id/btn_move_activity"
+        app:layout_constraintTop_toBottomOf="@+id/btn_move_activity" />
+
+    <Button
+        android:id="@+id/btn_dial_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:text="@string/dial_a_number"
+        app:layout_constraintEnd_toEndOf="@+id/btn_move_activity_data"
+        app:layout_constraintStart_toStartOf="@+id/btn_move_activity_data"
+        app:layout_constraintTop_toTopOf="@+id/btn_move_activity_data" />
+
+    <Button
+        android:id="@+id/btn_move_activity_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="@string/pindah_activity_dengan_object"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dial_number"
+        app:layout_constraintStart_toStartOf="@+id/btn_dial_number"
+        app:layout_constraintTop_toTopOf="@+id/btn_dial_number" />
+
+    <Button
+        android:id="@+id/btn_move_for_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="121dp"
+        android:text="@string/pindah_aktivity_untuk_result"
+        app:layout_constraintEnd_toEndOf="@+id/btn_move_activity_object"
+        app:layout_constraintStart_toStartOf="@+id/btn_move_activity_object"
+        app:layout_constraintTop_toTopOf="@+id/btn_move_activity_object" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:text="@string/hasil"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_move_for_result"
+        app:layout_constraintStart_toStartOf="@+id/btn_move_for_result"
+        app:layout_constraintTop_toTopOf="@+id/btn_move_for_result" />
+</androidx.constraintlayout.widget.ConstraintLayout>
